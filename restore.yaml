@@ -5,7 +5,7 @@ metadata:
 spec:
   # checkpointを取ったのと同じノードに固定する
   # ノード名は `kubectl get nodes -o wide` で確認
-  nodeName: inu
+  nodeName: neko
 
   containers:
     - name: counter
