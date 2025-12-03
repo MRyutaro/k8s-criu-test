@@ -1,2 +1,2 @@
-client-admin.crt
-client-admin.key
+*.crt
+*.key
