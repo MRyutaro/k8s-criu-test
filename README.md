@@ -114,10 +114,9 @@ sudo apt-get update
 sudo apt-get install -y checkpointctl buildah
 ```
 
-buildah: OCIイメージをビルドするためのツール
-checkpointctl: CRIUで作られたtar形式のチェックポイントファイルからOCIイメージを作成するツール
-crictl: OCIイメージの確認ができる．docker imagesとかと同じ感じ．
-
+- buildah: OCIイメージをビルドするためのツール
+- checkpointctl: CRIUで作られたtar形式のチェックポイントファイルからOCIイメージを作成するツール
+- crictl: OCIイメージの確認ができる．docker imagesとかと同じ感じ．
 
 ```
 sudo apt install golang
