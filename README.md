@@ -155,6 +155,6 @@ matsumoto@neko:~/k8s-criu-test$ sudo buildah images | grep checkpoints
 localhost/checkpoints/counter             latest      18e37b614456   28 seconds ago   457 KB
 ```
 
-マスターノード側でイメージをビルドしてもだめ
-送らないといけない
-nfsの設定をしたほうがいいかもしれない？
+リストアは無理そう
+- 上のtarは差分レイヤしかないから/bin/bashとかがうごかない
+- 公式ドキュメントもアルファ版と書かれている．これをわざわざやってまで予備調査をする必要はないと判断したためやめる．
