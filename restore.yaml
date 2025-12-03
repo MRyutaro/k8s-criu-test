@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: counters-restored
+spec:
+  # checkpointを取ったのと同じノードに固定する
+  # ノード名は `kubectl get nodes -o wide` で確認
+  nodeName: inu
+
+  containers:
+    - name: counter
+      image: localhost/checkpoints/counter:latest
