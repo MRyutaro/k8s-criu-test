@@ -86,6 +86,20 @@ metrics-server をインストール
 ```
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
+```
+kubectl -n kube-system edit deployment metrics-server
+```
+```
+    spec:
+      containers:
+      - args:
+        - --cert-dir=/tmp
+        - --secure-port=10250
+        - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+        - --kubelet-use-node-status-port
+        - --metric-resolution=15s
+        - --kubelet-insecure-tls
+```
 
 ## criuでのチェックポイント
 criuの設定をしてpodのチェックポイントをとるところまでやる
