@@ -98,7 +98,7 @@ kubectl -n kube-system edit deployment metrics-server
         - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
         - --kubelet-use-node-status-port
         - --metric-resolution=15s
-        - --kubelet-insecure-tls
+        - --kubelet-insecure-tls  # これを追加
 ```
 
 ## criuでのチェックポイント
