@@ -82,6 +82,11 @@ inu    Ready    <none>          7m38s   v1.32.10
 neko   Ready    control-plane   23m     v1.32.10
 ```
 
+metrics-server をインストール
+```
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```
+
 ## criuでのチェックポイント
 criuの設定をしてpodのチェックポイントをとるところまでやる
 
